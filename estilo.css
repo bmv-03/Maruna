@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Patrick+Hand&display=swap');
+
+:root{
+  --pink:#ffb7cf; --hot:#ff6f9f; --light:#fff6fa; --blue:#a9d9ef;
+  --navy:#3e5870; --cream:#fff9e9; --ink:#5b5260; --white:#fff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(135deg,#fff7fa,#fdfcff 55%,#eef9ff);color:var(--ink);font-family:'Nunito',sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(#ffb7cf 1px,transparent 1px);background-size:22px 22px;z-index:-1}
+.topo{text-align:center;padding:28px 15px 18px;background:rgba(255,255,255,.88);border-bottom:4px solid var(--pink);position:relative}
+.topo h1{margin:0;color:#f15f92;font-size:clamp(25px,6vw,42px);font-weight:800}
+.topo p{margin:6px auto 18px;max-width:650px}
+.laço{font-size:35px;margin-bottom:2px}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:7px;max-width:1000px;margin:auto}
+nav a{color:var(--navy);text-decoration:none;background:white;border:2px solid #dcecf4;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:700;transition:.2s}
+nav a:hover,nav a.ativo{background:#ffe0eb;border-color:#ffadc9;color:#d94d80;transform:translateY(-2px)}
+.container{max-width:1050px;margin:auto;padding:35px 18px 55px}
+.hero{background:linear-gradient(120deg,#ffdce9,#fff,#dff3fb);border:3px solid white;box-shadow:0 10px 35px #e8cdd8;border-radius:30px;padding:42px;display:grid;grid-template-columns:120px 1fr;gap:30px;align-items:center}
+.hero-kitty{font-size:90px;text-align:center;filter:drop-shadow(0 5px 0 #fff)}
+.selo{display:inline-block;background:#ff76a5;color:#fff;padding:5px 11px;border-radius:20px;font-size:10px;font-weight:800;letter-spacing:1px}
+.hero h2{font-size:clamp(29px,5vw,50px);line-height:1.05;margin:12px 0;color:#4f6072}
+.hero h2 strong{color:#ed6193}.hero p{max-width:650px;line-height:1.7}
+.botao{display:inline-block;text-decoration:none;color:white;background:#f16b9a;border:0;border-radius:999px;padding:12px 20px;font-weight:800;box-shadow:0 5px 0 #d94f80;transition:.15s}.botao:hover{transform:translateY(2px);box-shadow:0 3px 0 #d94f80}.botao.pequeno{padding:9px 15px;font-size:13px}
+.grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}
+.card{text-decoration:none;color:var(--ink);padding:25px;border-radius:25px;border:3px solid white;box-shadow:0 7px 20px #e8dbe1;transition:.2s;min-height:175px}.card:hover{transform:translateY(-5px)}.card span{font-size:32px}.card h3{margin:10px 0 5px;color:#d85d89}.card p{font-size:14px;line-height:1.5}.rosa{background:#ffe2ed}.azul{background:#e2f5fc}.creme{background:#fff4d7}
+.bilhetinho{margin-top:25px;background:#fff;border:3px dashed #f3a9c2;border-radius:25px;padding:22px;text-align:center;box-shadow:0 5px 15px #eadde2}.bilhetinho p{line-height:1.7}.bilhetinho span{font-family:'Patrick Hand';font-size:20px;color:#e35e8c}
+.titulo-pagina{text-align:center;margin-bottom:28px}.titulo-pagina span{font-size:42px}.titulo-pagina h2{margin:4px 0;color:#e25b8b;font-size:35px}.titulo-pagina p{margin:4px 0}
+.cartas-grid,.revistas-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.carta,.revista{background:#fff;border:3px solid #ffd1e0;border-radius:25px;padding:25px;box-shadow:0 7px 20px #eadde2;position:relative}.carta:after{content:"♡";position:absolute;right:20px;top:15px;color:#ffadc8;font-size:30px}.carta h3{color:#e05b89}.bloqueado{color:#aaa;font-size:13px}
+.capa-placeholder{height:250px;border-radius:18px;background:linear-gradient(150deg,#ffb7cf,#fff0f6);display:grid;place-items:center;text-align:center;color:#d94f80;font-weight:800;font-size:30px;letter-spacing:3px;margin-bottom:15px}.capa-placeholder small{font-size:13px;letter-spacing:2px}.capa-placeholder.azulc{background:linear-gradient(150deg,#a9d9ef,#effaff);color:#557b94}
+.lista-arquivos{display:grid;gap:15px}.arquivo{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--ink);background:white;border:3px solid #e8d7df;border-radius:22px;padding:18px;box-shadow:0 5px 15px #eee}.arquivo>span{font-size:35px}.arquivo div{flex:1}.arquivo strong{display:block;color:#d75a87}.arquivo small{display:block;margin-top:3px;color:#999}.arquivo b{color:#ff78a7;font-size:25px}
+.galeria{columns:3 220px;column-gap:16px}.galeria figure{break-inside:avoid;margin:0 0 16px;background:#fff;padding:9px;border-radius:18px;box-shadow:0 6px 16px #e5dce0;border:2px solid #fff}.galeria img{display:block;width:100%;min-height:180px;object-fit:cover;border-radius:12px;background:#fce8ef}.galeria figcaption{font-family:'Patrick Hand';font-size:18px;color:#d45d86;padding:8px 5px}
+.passeios{display:grid;gap:18px}.passeio{display:grid;grid-template-columns:75px 1fr;gap:20px;align-items:center;background:white;border:3px solid #d9edf5;border-radius:25px;padding:20px;box-shadow:0 5px 15px #e2eaee}.numero{width:65px;height:65px;border-radius:50%;display:grid;place-items:center;background:#b8e0ef;color:#466b80;font-weight:800;font-size:22px}.passeio h3{margin:0;color:#d75a87}.passeio p{margin:6px 0}
+.amores{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.amores div{background:#fff;border:3px solid #ffd5e2;border-radius:20px;padding:20px;color:#d75a87;font-weight:700;box-shadow:0 4px 12px #eee}.carta-final{margin:25px auto 0;max-width:650px;background:linear-gradient(135deg,#fff,#ffe7ef);border:3px dashed #f29fbd;border-radius:30px;text-align:center;padding:30px;box-shadow:0 7px 20px #ecdde2}.carta-final h3{color:#e15888;font-size:25px}.carta-final p{line-height:1.7}.carta-final strong{font-family:'Patrick Hand';font-size:24px;color:#df5e8a}
+.dica{margin-top:25px;background:#fffbe8;border:2px dashed #ead48b;border-radius:18px;padding:15px;line-height:1.5;font-size:14px}.dica code{background:#fff0b8;padding:2px 5px;border-radius:5px}
+footer{text-align:center;padding:25px;color:#9d8792;background:#fff;border-top:2px solid #f7dbe5;font-family:'Patrick Hand';font-size:19px}
+@media(max-width:750px){.hero{grid-template-columns:1fr;padding:28px 22px;text-align:center}.hero-kitty{font-size:65px}.grid-cards{grid-template-columns:1fr}.cartas-grid,.revistas-grid,.amores{grid-template-columns:1fr}.container{padding-top:25px}.topo{padding-top:20px}nav a{font-size:12px;padding:7px 10px}.passeio{grid-template-columns:55px 1fr}.numero{width:52px;height:52px;font-size:18px}}
+
+.contadores{margin:30px 0 5px;background:rgba(255,255,255,.88);border:3px solid white;border-radius:30px;padding:30px 22px;box-shadow:0 8px 25px #e8dce2;text-align:center}
+.contador-intro h2{color:#e15d8b;margin:10px 0 4px;font-size:clamp(24px,4vw,34px)}
+.contador-intro p{margin:0 0 22px;color:#80727b}
+.contador-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.contador{background:linear-gradient(145deg,#fff0f5,#fff);border:3px solid #ffd1df;border-radius:23px;padding:20px 13px;box-shadow:0 5px 14px #eee0e6}
+.contador.azul-contador{background:linear-gradient(145deg,#edfaff,#fff);border-color:#c5e7f3}
+.contador-icone{font-size:30px;display:block}
+.contador h3{color:#d85b88;font-size:16px;margin:7px 0 4px}
+.contador strong{font-family:'Patrick Hand';font-size:21px;color:#64798a}
+.contador .tempo{margin:12px 0 5px;color:#e8568a;font-size:25px;font-weight:800;line-height:1.15}
+.contador small{font-size:11px;color:#93848c;display:block;line-height:1.35}
+@media(max-width:750px){.contador-grid{grid-template-columns:1fr}.contadores{padding:25px 15px}}
