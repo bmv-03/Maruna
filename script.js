@@ -1,20 +1,21 @@
 function atualizarContadores() {
   const agora = new Date();
+
   document.querySelectorAll('.tempo[data-start]').forEach(el => {
     const inicio = new Date(el.dataset.start);
-    let diferenca = agora - inicio;
-    if (diferenca < 0) { el.textContent = 'ainda não começou ♡'; return; }
-    const segundo = 1000, minuto = segundo*60, hora = minuto*60, dia = hora*24;
-    const dias = Math.floor(diferenca / dia);
-    diferenca %= dia;
-    const horas = Math.floor(diferenca / hora);
-    diferenca %= hora;
-    const minutos = Math.floor(diferenca / minuto);
-    const segundos = Math.floor((diferenca % minuto) / segundo);
-    el.textContent = `${dias} dias · ${String(horas).padStart(2,'0')}h ${String(minutos).padStart(2,'0')}m ${String(segundos).padStart(2,'0')}s`;
+    const diferenca = agora - inicio;
+
+    if (diferenca < 0) {
+      el.textContent = 'ainda não começou ♡';
+      return;
+    }
+
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    el.textContent = `${dias} ${dias === 1 ? 'dia' : 'dias'}`;
   });
 }
+
 document.addEventListener('DOMContentLoaded', () => {
   atualizarContadores();
-  setInterval(atualizarContadores, 1000);
+  setInterval(atualizarContadores, 60000);
 });
